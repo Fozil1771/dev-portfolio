@@ -1,0 +1,37 @@
+.menu_heading * {
+	font-size: 1rem;
+	font-weight: 400;
+	cursor: pointer;
+	color: #fff;
+}
+
+.menu_heading h5 {
+	padding: 10px 0;
+	border-bottom: 1px solid #1e2d3d;
+}
+
+.menu_list {
+	margin: 21px 0;
+}
+
+.menu_list__inner {
+	margin-left: 1rem;
+	margin-top: 0.25rem;
+}
+
+.menu_list li {
+	color: #607b96;
+	margin-top: 0.5rem;
+}
+
+.menu_list li i {
+	margin-right: 2px;
+	margin-top: 2px;
+}
+
+.content {
+	flex: 0 1 auto;
+	border-left: 1px solid #1e2d3d;
+	height: 100%;
+	display: flex;
+}

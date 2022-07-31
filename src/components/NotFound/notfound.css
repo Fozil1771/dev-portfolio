@@ -1,0 +1,43 @@
+:root {
+	--init-x: 0;
+	--init-y: 0;
+	--dest-x: 0;
+	--dest-y: 0;
+	--dest-z: 0;
+}
+
+.lingo {
+	position: absolute;
+	color: white;
+	transform: translateZ(0);
+	animation: flythrough 5s forwards ease-in;
+	transform-origin: center;
+}
+
+.notfound {
+	position: absolute;
+	z-index: 999999;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #011627;
+}
+.notfound a {
+	color: #4d5bce;
+	font-size: 3rem;
+}
+
+@keyframes flythrough {
+	0% {
+		opacity: 0;
+		transform: perspective(0px) translate3d(var(--init-x), var(--init-y), 0px);
+	}
+	50% {
+		opacity: 0.7;
+	}
+	100% {
+		opacity: 0;
+		transform: perspective(500px)
+			translate3d(var(--dest-x), var(--dest-y), var(--dest-z));
+	}
+}

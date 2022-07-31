@@ -1,7 +1,8 @@
 .nav {
-	padding: 0 1.5rem;
 	height: 3.5rem;
 	border-bottom: 1px solid #1e2d3d;
+	position: relative;
+	background-color: #011627;
 }
 
 .nav_list {
@@ -12,7 +13,7 @@
 }
 
 .nav-brand {
-	flex: 0 1 15%;
+	flex: 0 1 20%;
 	color: #607b96;
 }
 
@@ -22,8 +23,11 @@
 
 .nav_list__item {
 	border-left: 1px solid #1e2d3d;
-
 	padding: 1rem 2rem;
+}
+
+.nav_list__item a {
+	color: #4d5bce;
 }
 
 .nav_list__item:first-child {
